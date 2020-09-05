@@ -1,24 +1,41 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import logo from "./assets/images/logo.svg";
+import "./assets/css/App.css";
+import "./assets/css/Header.css";
+import "./assets/css/Footer.css";
+import { Row, Col } from "antd";
+import { Typography } from "antd";
+import { Button } from 'antd';
+
+// COMPONENTES
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+import Content from "./components/Content";
+import Content2 from "./components/Content2";
+import Content3 from "./components/Content3";
+
+const { Text, Title } = Typography;
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Header />
+      <section className="App-header">
+        <Row justify="end" style={{ backgroundColor: "white" }} >
+        <Content3 />
+        </Row>
+        <Row justify="center">
+          <Col xl={{ span: 18 }}>
+            <Content2 />
+          </Col>
+        </Row>
+        <Row justify="center" style={{ backgroundColor: "white" }}>
+          <Col xl={{ span: 18 }}>
+            <Content />
+          </Col>
+        </Row>
+      </section>
+      <Footer />
     </div>
   );
 }
