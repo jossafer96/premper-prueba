@@ -1,13 +1,13 @@
 import React, {Component} from 'react';
 import { Card, Col, Row } from 'antd';
-import { Layout, Menu, Breadcrumb } from 'antd';
-import { Button, Space, Upload, Popconfirm } from 'antd';
+import { Layout } from 'antd';
+import {  Space  } from 'antd';
 import { Typography } from 'antd';
-const { Text, Link } = Typography;
+const { Text } = Typography;
 const { Title } = Typography;
 
-const { Header, Content, Footer } = Layout;
-const { Meta } = Card;
+const {  Content } = Layout;
+
 
 class Content2 extends Component{
     render(){

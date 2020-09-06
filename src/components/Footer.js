@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import { Row, Col } from 'antd';
-import { Space, Card } from 'antd';
-import { Typography } from 'antd';
+import { Space } from 'antd';
+
 import {
   FacebookFilled,
   YoutubeFilled,
@@ -10,7 +10,7 @@ import {
   WhatsAppOutlined,
 } from '@ant-design/icons';
 import { Button } from 'antd';
-const { Title } = Typography;
+
 
 
 class Footer extends Component{
@@ -51,14 +51,14 @@ class Footer extends Component{
                   </Space>
                 </Col>
                 <Col  xl={{span: 3}} md={{span: 3}}  xs={{span: 24}} style={{ textAlign:'center' }}>
-                  <p>About Us</p>
-                  <p>Contact</p>
-                  <p>Blog</p>
+                  <p className='hover-link'>About Us</p>
+                  <p className='hover-link'>Contact</p>
+                  <p className='hover-link'>Blog</p>
                 </Col>
                 <Col  xl={{span: 3}} md={{span: 3}} xs={{span: 24}} style={{  textAlign:'center' }}>
-                  <p>Carrers</p>
-                  <p>Support</p>
-                  <p>Privacy Policy</p>
+                  <p className='hover-link'>Carrers</p>
+                  <p className='hover-link'>Support</p>
+                  <p className='hover-link'>Privacy Policy</p>
                 </Col>
                 <Col  xl={{span: 8}} >
                   <Space className='resp-btn' direction="vertical" size={50} style={{ float: "right", alignItems:'flex-end' }}>

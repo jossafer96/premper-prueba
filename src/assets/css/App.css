@@ -37,10 +37,7 @@ html, body {
     transform: rotate(360deg);
   }
 }
-.ant-space> .ant-space-item > h5:hover{
-  color: #2fc592;
-  cursor: pointer;
-}
+
 
 @media only screen and (max-width: 800px) {
   .resp {
